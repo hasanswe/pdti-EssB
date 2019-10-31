@@ -25,23 +25,35 @@ prediction probability scores.
 (I) Enzyme (II) Ion Channel (III) GPCR (IV) Nuclear Receptor
 
 
+# Feature Generation and Experiments codes
 
-#Feature Generation and Experiments codes
+# Protein Feature Extraction:
 
-Protein Feature Extraction: 
-Evolutionary Based Features: PSSM bigram => X
+Evolutionary Based Features: 
+
+PSSM bigram => X
+
 Bigram Main.m and Evolutionary Based Features Bigram PSSM.m files was used to create the feature group X
 Sequence Features: PseAAC => Y
+
 PseAAC.py was used to create the feature group Y 
-Structural Based Features: SSC, ASAC, TAC,TAAC, SPAC, TAB, SPB => Z
+
+Structural Based Features: 
+
+SSC, ASAC, TAC,TAAC, SPAC, TAB, SPB => Z
+
 Structural Based Features-SPIDER2 (1), Structural Based Features-SPIDER2 (2) and Structural Based Features-SPIDER2 (3) files was used to create the feature group Z
-Drug Feature Extraction::
+
+# Drug Feature Extraction:
 
 Structural based Properties: MSF  => A
+
 CalculatePubChemFingerprint.py file was used to create the feature group A
 
-Random Under Sampling.py and Cluster Under Sampling.py files was used for to balance the datasets.  
+Random Under Sampling.py and Cluster Under Sampling.py files was used for to balance the datasets.
+
 Feature Selection.py file was used to reduce the drug-target featues.
+
 Effect of Feature Groups and Classifiers.py and Effect of Balancing Methods.py files was used for test the effect of diffierent Feature Groups, Classifiers and Balancing
 techniques on diffierent datasets. 
 
