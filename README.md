@@ -43,7 +43,9 @@ CalculatePubChemFingerprint.py file was used to create the feature group A
 Random Under Sampling.py and Cluster Under Sampling.py files was used for to balance the datasets.  
 Feature Selection.py file was used to reduce the drug-target featues.
 Effect of Feature Groups and Classifiers.py and Effect of Balancing Methods.py files was used for test the effect of diffierent Feature Groups, Classifiers and Balancing
-techniques on diffierent datasets. [Same code can be applied for diffierent datasets with diffierent features]
+techniques on diffierent datasets. 
+
+[Same code can be applied for diffierent datasets with diffierent features]
 
 
 
