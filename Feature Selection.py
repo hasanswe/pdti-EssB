@@ -19,7 +19,7 @@ from sklearn.model_selection import train_test_split, cross_val_score, cross_val
 from sklearn.metrics import (accuracy_score, precision_score, confusion_matrix, classification_report, roc_curve, 
                              auc, roc_auc_score, matthews_corrcoef, make_scorer, recall_score, f1_score)
 
-dataset = pd.read_excel(r"D:\Drug Target Interaction\Paper\Experiments\Ion Channel.xlsx")
+dataset = pd.read_excel(r"D:\Drug Target Interaction\Paper\Experiments\Ion Channel AX.xlsx")
 
 dataset.head()
 
@@ -31,7 +31,6 @@ X = dataset.drop("Target", axis=1)
 y = dataset["Target"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
-
 #
 for i in range(1,11):
 
@@ -42,15 +41,14 @@ for i in range(1,11):
 
     print(feature_name)
 #
-
-    X, y = make_friedman1(n_samples=50, n_features=10, random_state=0)
+   X, y = make_friedman1(n_samples=50, n_features=10, random_state=0)
     estimator = SVR(kernel="linear")
     selector = RFE(estimator, 5, step=1)
     selector = selector.fit(X, y)
     selector.support_ 
-    array([ ....................])
+    array([ ])
      selector.ranking_
-     array([................])
+     array([ ])
 
 #
     model = ExtraTreesClassifier()
