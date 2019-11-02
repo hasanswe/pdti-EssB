@@ -1,8 +1,6 @@
 import re
 
 AALetter = ["A", "R", "N", "D", "C", "E", "Q", "G", "H", "I", "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V"]
-
-
 #
 def CalculateAAComposition(ProteinSequence):
     """
@@ -21,9 +19,6 @@ def CalculateAAComposition(ProteinSequence):
     for i in AALetter:
         Result[i] = round(float(ProteinSequence.count(i)) / LengthSequence * 100, 3)
     return Result
-
-
-
 #
 def CalculatePseAAComposition(ProteinSequence):
     """
@@ -41,8 +36,6 @@ def CalculatePseAAComposition(ProteinSequence):
     result = {}
     result.update(CalculatePseAAComposition(ProteinSequence))
     return result
-
-
 #
 if __name__ == "__main__":
     protein = "ADGCGVGEGTGQGPMCNCMCMKWVYADEDAADLESDSFADEDASLESDSFPWSNQRVFCSFADEDAS"
@@ -52,9 +45,7 @@ if __name__ == "__main__":
     res = CalculatePseAAComposition(protein)
     print len(res)
 
-
 #Calculate protein descriptors via object
-
 
 >>> from PyBioMed import Pyprotein
 >>> protein="ADGCGVGEGTGQGPMCNCMCMKWVYADEDAADLESDSFADEDASLESDSFPWSNQRVFCSFADEDAS"
