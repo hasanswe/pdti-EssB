@@ -47,14 +47,11 @@ Structural based Properties: MSF  => A
 CalculatePubChemFingerprint.py file was used to create the feature group A
 
 
-Random Under Sampling.py and Cluster Under Sampling.py files was used for to balance the datasets. 
+Random Under Sampling.py and Cluster Under Sampling.py files was used to balance the datasets. 
  
 Feature Selection.py file was used to reduce the drug-target features.
 
-Effect of Feature Groups and Classifiers.py and Effect of Balancing Methods.py files was used for test the effect of different Feature Groups, Classifiers and Balancing
-techniques on different datasets. 
-
-[Same code can be applied for different datasets with different features]
+Effect of Feature Groups and Classifiers.py and Effect of Balancing Methods.py files was used to test the effect of different Feature Groups, Classifiers and Balancing techniques on different datasets. [Same code can be applied for different datasets with different features]
 
 
 
