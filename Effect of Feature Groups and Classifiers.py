@@ -197,7 +197,7 @@ f_measure
 mcc = matthews_corrcoef(pred_xgb, y_test)
 mcc
 
-# Result Summary
+# Result Summary part
 
 {
     "AUC Score" : round(auc_xgb_1, 4),
