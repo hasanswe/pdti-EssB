@@ -57,7 +57,6 @@ for train_index, test_index in skf.split(X, y):
 
     kmeans = KMeans(n_clusters=number_of_clusters)
     kmeans.fit(majority_class_instances)
-
     X_maj = []
     y_maj = []
 
